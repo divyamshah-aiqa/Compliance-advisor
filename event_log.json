@@ -1,0 +1,125 @@
+[
+  {
+    "event_version": "1.0.0",
+    "timestamp": "2025-11-09T12:26:34.471745+00:00",
+    "request_id": "c5399e6f-4c02-4a74-a231-a50c491ac6de",
+    "input": {
+      "text": "What is hypertension?",
+      "language": "en"
+    },
+    "classification": {
+      "domain": "medical",
+      "intent": "explain_concepts",
+      "confidence": 0.8,
+      "rationale": "Matched medical keyword(s)"
+    },
+    "policy": {
+      "risk_level": "low",
+      "policy_version": "1.0.0"
+    },
+    "retrieval": {
+      "evidence": [
+        {
+          "source": "medical_who",
+          "doc_id": "chunk-0",
+          "score": 0.8849,
+          "snippet": "Hypertension (high blood pressure) is when the pressure in your blood vessels is too high (140/90 mmHg or higher)..."
+        }
+      ]
+    },
+    "verdict": {
+      "label": "respond_grounded"
+    },
+    "actions": {
+      "responded": true,
+      "disclaimers": [
+        "General information only. Not medical advice."
+      ]
+    },
+    "metrics": {
+      "latency_ms": 0
+    }
+  },
+  {
+    "event_version": "1.0.0",
+    "timestamp": "2025-11-09T12:30:35.076231+00:00",
+    "request_id": "423ae17e-bc76-4106-b973-d639815353bf",
+    "input": {
+      "text": "Explain contract law basics",
+      "language": "en"
+    },
+    "classification": {
+      "domain": "legal",
+      "intent": "explain_concepts",
+      "confidence": 0.8,
+      "rationale": "Matched legal keyword(s)"
+    },
+    "policy": {
+      "risk_level": "low",
+      "policy_version": "1.0.0"
+    },
+    "retrieval": {
+      "evidence": [
+        {
+          "source": "legal_contract",
+          "doc_id": "chunk-21",
+          "score": 0.9257,
+          "snippet": "All agreements are contracts if they are made by the free consent of parties competent to contract..."
+        }
+      ]
+    },
+    "verdict": {
+      "label": "respond_grounded"
+    },
+    "actions": {
+      "responded": true,
+      "disclaimers": [
+        "General information only. Not legal advice."
+      ]
+    },
+    "metrics": {
+      "latency_ms": 0
+    }
+  },
+  {
+    "event_version": "1.0.0",
+    "timestamp": "2025-11-09T12:30:35.093102+00:00",
+    "request_id": "fef6b917-b10c-48b6-a1b3-042acc6f2776",
+    "input": {
+      "text": "What are mutual funds?",
+      "language": "en"
+    },
+    "classification": {
+      "domain": "financial",
+      "intent": "explain_concepts",
+      "confidence": 0.8,
+      "rationale": "Matched financial keyword(s)"
+    },
+    "policy": {
+      "risk_level": "low",
+      "policy_version": "1.0.0"
+    },
+    "retrieval": {
+      "evidence": [
+        {
+          "source": "financial_sebi",
+          "doc_id": "chunk-0",
+          "score": 1.3294,
+          "snippet": "Mutual funds pool money from investors to invest in stocks, bonds, or other securities..."
+        }
+      ]
+    },
+    "verdict": {
+      "label": "respond_grounded"
+    },
+    "actions": {
+      "responded": true,
+      "disclaimers": [
+        "General information only. Not financial advice."
+      ]
+    },
+    "metrics": {
+      "latency_ms": 0
+    }
+  }
+]
